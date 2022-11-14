@@ -26,7 +26,7 @@ public class Humain {
 	}
 
 	private String prendreParole() {
-		return "Le gaulois " + nom + " : ";
+		return nom + " : ";
 	}
 
 	public void gagnerArgent(int gain) {
