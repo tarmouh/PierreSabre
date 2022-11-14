@@ -1,7 +1,7 @@
 package histoire;
 
 import personnages.Commercant;
-import personnages.Yakuza;
+import personnages.Ronin;
 
 public class HistoireTP4 {
 
@@ -17,9 +17,12 @@ public class HistoireTP4 {
 //		marco.seFaireExtorquer();
 //		marco.recevoir(15);
 //		marco.boire();
-		Yakuza yaku = new Yakuza("Yaku le Noir", "whisky", 30, "Warsong");
-		yaku.direBonjour();
-		yaku.extorquer(marco);
+//		Yakuza yaku = new Yakuza("Yaku le Noir", "whisky", 30, "Warsong");
+//		yaku.direBonjour();
+//		yaku.extorquer(marco);
+		Ronin roro = new Ronin("roro", "shochu", 60);
+		roro.direBonjour();
+		roro.donner(marco);
 	}
 
 }
