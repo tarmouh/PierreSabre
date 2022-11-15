@@ -7,16 +7,16 @@ public class Commercant extends Humain {
 
 	}
 
-	// Solution 1 : changer la visibilité de argent en public
-	// Solution 2 : redéfinir l'attribut argent
+	// Solution 1 : passer par le biais de méthode
+	// Solution 2 :
 	public int seFaireExtorquer() {
-		argent = 0;
+		this.perdreArgent(this.getArgent() + 1);
 		parler("J'ai tout perdu! Le monde est trop injuste...");
-		return argent;
+		return this.getArgent();
 	}
 
 	public void recevoir(int argent) {
-		this.argent += argent;
+		this.gagnerArgent(argent);
 		parler(argent + " sous! Je te remercie généreux donateur");
 	}
 
