@@ -10,9 +10,10 @@ public class Commercant extends Humain {
 	// Solution 1 : passer par le biais de méthode
 	// Solution 2 :
 	public int seFaireExtorquer() {
-		this.perdreArgent(this.getArgent() + 1);
+		int argentPerdu = this.getArgent();
+		this.perdreArgent(this.getArgent());
 		parler("J'ai tout perdu! Le monde est trop injuste...");
-		return this.getArgent();
+		return argentPerdu;
 	}
 
 	public void recevoir(int argent) {
